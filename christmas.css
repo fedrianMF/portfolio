@@ -1,0 +1,75 @@
+/* 🎄 Christmas Theme 🎄 */
+
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: -20px;
+  color: #c9d1d9;
+  opacity: 0.8;
+  font-size: 1em;
+  user-select: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh) rotate(360deg);
+  }
+}
+
+.christmas-tree {
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  z-index: 0;
+  opacity: 0.15;
+  /* Subtle background decoration */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  filter: grayscale(0.3);
+}
+
+.tree-top,
+.tree-middle,
+.tree-bottom {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 80px solid #238636;
+  /* GitHub Green */
+  margin-bottom: -30px;
+}
+
+.tree-middle {
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 100px solid #238636;
+}
+
+.tree-bottom {
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 120px solid #238636;
+}
+
+.tree-trunk {
+  width: 40px;
+  height: 50px;
+  background-color: #30363d;
+  margin-top: -10px;
+}
