@@ -21,6 +21,6 @@ jobs:
         key: ${{ secrets.VPS_SSH_KEY }}
         port: ${{ secrets.VPS_PORT }}
         script: |
-          cd /var/www/html
+          cd /var/www/portfolio
           git pull origin main
           echo "Deployment completed at $(date)"
