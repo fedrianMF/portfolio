@@ -1,0 +1,211 @@
+body {
+  background-color: #0d1117;
+  /* Fondo oscuro tipo GitHub/VSCode */
+  color: #c9d1d9;
+  /* Texto gris claro legible */
+  font-family: 'Courier New', Courier, monospace;
+  /* Fuente monoespaciada */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  width: 90%;
+  background-color: #0d1117;
+  overflow: hidden;
+  /* Ensure header stays inside rounded corners */
+  padding: 0;
+  /* Remove padding from container, move to body */
+  margin: auto;
+}
+
+.terminal-header {
+  background-color: #161b22;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.control:hover {
+  transform: scale(1.1);
+}
+
+.control.close {
+  background-color: #ff5f56;
+}
+
+.control.minimize {
+  background-color: #ffbd2e;
+}
+
+.control.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  flex-grow: 1;
+  text-align: center;
+  color: #8b949e;
+  font-size: 0.9rem;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.terminal-body {
+  padding: 2rem;
+  text-align: left;
+  /* Default to left align for terminal feel */
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for terminal body */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background-color: #c9d1d9;
+  animation: blink 1s infinite;
+  vertical-align: middle;
+  will-change: opacity;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+pre {
+  /* Asegura que el texto se ajuste como una terminal real */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  color: #58a6ff;
+  /* Azul GitHub */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #7ee787;
+  /* Verde/Lima al pasar el mouse */
+}
+
+.user {
+  color: #58a6ff;
+  /* Nombre de usuario en azul */
+  font-weight: 500;
+}
+
+.dir-link {
+  color: #7ee787;
+  /* Directorios en verde */
+  font-weight: bold;
+}
+
+.tree-dir {
+  color: #7ee787;
+  /* Green for directories in tree */
+  font-weight: bold;
+}
+
+.tree-file {
+  color: #c9d1d9;
+  /* Default text color for files */
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .terminal-body {
+    padding: 1.5rem;
+    max-height: 60vh;
+  }
+
+  .terminal-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-body {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
