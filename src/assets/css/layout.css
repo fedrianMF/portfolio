@@ -21,6 +21,7 @@
 
 .hero-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
@@ -36,6 +37,7 @@
 
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-md);
   margin-bottom: 4rem;
 }

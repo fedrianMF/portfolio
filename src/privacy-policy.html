@@ -4,116 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy - n8n Fedrian</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <style>
-      body {
-        font-family:
-          "Inter",
-          system-ui,
-          -apple-system,
-          sans-serif;
-        line-height: 1.6;
-        color: #e0e0e0;
-        background-color: #0a0a0a;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 20px;
+      .legal-content h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: var(--color-text-primary);
+        font-size: 1.25rem;
       }
-      h1 {
-        color: #ffffff;
-        border-bottom: 2px solid #333;
-        padding-bottom: 10px;
+      .legal-content p {
+        margin-bottom: 1.25rem;
+        color: var(--color-text-secondary);
+        line-height: 1.7;
       }
-      h2 {
-        color: #ffffff;
-        margin-top: 30px;
+      .legal-content strong {
+        color: var(--color-text-primary);
       }
-      p {
-        margin-bottom: 15px;
+      .legal-header {
+        margin-bottom: 3rem;
       }
-      strong {
-        color: #ffffff;
+      .legal-header h1 {
+        margin-bottom: 0.5rem;
       }
-      .footer {
-        margin-top: 50px;
-        font-size: 0.85em;
-        color: #888;
-        border-top: 1px solid #333;
-        padding-top: 20px;
+      .last-updated {
+        color: var(--color-accent);
+        font-size: 0.9rem;
+        font-weight: 500;
       }
-      a {
-        color: #3b82f6;
-        text-decoration: none;
-      }
-      a:hover {
+      /* Ensure links in terminal look like links */
+      .legal-content a {
+        color: var(--color-link);
         text-decoration: underline;
+      }
+      .legal-content a:hover {
+        color: var(--color-link-hover);
       }
     </style>
   </head>
   <body>
-    <h1>Privacy Policy</h1>
-    <p>Last Updated: May 20, 2024</p>
+    <div class="container-center">
+      <header class="hero legal-header">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: May 20, 2024</p>
+      </header>
 
-    <p>
-      This Privacy Policy describes how your information is handled in the
-      private instance of n8n hosted at <strong>n8n.fedrian.dev</strong>.
-    </p>
+      <section class="section-wrapper">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <div class="control-dot close"></div>
+              <div class="control-dot minimize"></div>
+              <div class="control-dot maximize"></div>
+            </div>
+            <div class="terminal-title">privacy_policy.md</div>
+          </div>
+          <div class="terminal-body legal-content">
+            <p>
+              This Privacy Policy describes how your information is handled in
+              the private instance of n8n hosted at
+              <strong>n8n.fedrian.dev</strong>.
+            </p>
 
-    <h2>1. Overview</h2>
-    <p>
-      This application is a private, personal automation instance. It is used
-      exclusively by the domain owner for workflow automation and personal
-      productivity.
-    </p>
+            <h2>1. Overview</h2>
+            <p>
+              This application is a
+              <strong>private, personal automation instance</strong>. It is used
+              exclusively by the domain owner for workflow automation and
+              personal productivity.
+            </p>
 
-    <h2>2. Use of Google User Data</h2>
-    <p>
-      If you authorize this application to access your Google account via OAuth,
-      the application will only access the specific data (scopes) you have
-      explicitly permitted. This data is used solely to execute the automations
-      you configure within the private instance (e.g., synchronizing emails,
-      updating spreadsheets, or managing calendar events).
-    </p>
+            <h2>2. Use of Google User Data</h2>
+            <p>
+              If you authorize this application to access your Google account
+              via OAuth, the application will only access the specific data
+              (scopes) you have explicitly permitted. This data is used solely
+              to execute the automations you configure within the private
+              instance (e.g., synchronizing emails, updating spreadsheets, or
+              managing calendar events).
+            </p>
 
-    <h2>3. Limited Use Disclosure</h2>
-    <p>
-      The use and transfer of information received from Google APIs to any other
-      app will adhere to
-      <strong
-        ><a
-          href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes"
-          target="_blank"
-          >Google API Services User Data Policy</a
-        ></strong
-      >, including the Limited Use requirements.
-    </p>
+            <h2>3. Limited Use Disclosure</h2>
+            <p>
+              The use and transfer of information received from Google APIs to
+              any other app will adhere to
+              <strong
+                ><a
+                  href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes"
+                  target="_blank"
+                  class="syntax-link"
+                  >Google API Services User Data Policy</a
+                ></strong
+              >, including the Limited Use requirements.
+            </p>
 
-    <h2>4. Data Storage and Security</h2>
-    <p>
-      All data processed through this instance is kept within the private server
-      environment and is not shared with any third parties. We implement
-      industry-standard security measures, including SSL/TLS encryption (HTTPS),
-      to protect the transmission of data. Data is stored locally in the
-      instance's database and is not accessible to external entities.
-    </p>
+            <h2>4. Data Storage and Security</h2>
+            <p>
+              All data processed through this instance is kept within the
+              private server environment and is not shared with any third
+              parties. We implement industry-standard security measures,
+              including <strong>SSL/TLS encryption (HTTPS)</strong>, to protect
+              the transmission of data. Data is stored locally in the instance's
+              database and is not accessible to external entities.
+            </p>
 
-    <h2>5. Data Sharing</h2>
-    <p>
-      We do not share, sell, or distribute any user data or account information
-      with third-party developers, advertisers, or any other entities.
-      Everything happens within this private, self-hosted infrastructure.
-    </p>
+            <h2>5. Data Sharing</h2>
+            <p>
+              We do not share, sell, or distribute any user data or account
+              information with third-party developers, advertisers, or any other
+              entities. Everything happens within this private, self-hosted
+              infrastructure.
+            </p>
 
-    <h2>6. Changes to This Policy</h2>
-    <p>
-      This policy may be updated periodically to reflect changes in our
-      practices or for legal reasons. Any significant changes will be reflected
-      in the "Last Updated" date at the top.
-    </p>
+            <h2>6. Changes to This Policy</h2>
+            <p>
+              This policy may be updated periodically to reflect changes in our
+              practices or for legal reasons. Any significant changes will be
+              reflected in the "Last Updated" date at the top.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <div class="footer">
-      &copy; 2024 Fedrian - Private Automations |
-      <a href="/index.html">Home</a> |
-      <a href="/tos.html">Terms of Service</a>
+      <footer class="site-footer">
+        <p>
+          &copy; 2024 Felix Adrian Mamani Foronda |
+          <a href="/index.html" class="syntax-link">Back to Home</a>
+        </p>
+        <div class="footer-nav">
+          <a href="/tos.html" class="syntax-link">[ Terms of Service ]</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -6,11 +6,6 @@ services:
     restart: always
     networks:
       - web_network
-    # El puerto 8080 es temporal para que puedas probarlo 
-    # mientras el Nginx local sigue activo. 
-    # Luego, Nginx Proxy lo encontrará internamente.
-    ports:
-      - "8080:80"
 
 networks:
   web_network:

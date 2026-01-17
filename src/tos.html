@@ -4,110 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms of Service - n8n Fedrian</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <style>
-      body {
-        font-family:
-          "Inter",
-          system-ui,
-          -apple-system,
-          sans-serif;
-        line-height: 1.6;
-        color: #e0e0e0;
-        background-color: #0a0a0a;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 20px;
+      .legal-content h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: var(--color-text-primary);
+        font-size: 1.25rem;
       }
-      h1 {
-        color: #ffffff;
-        border-bottom: 2px solid #333;
-        padding-bottom: 10px;
+      .legal-content p {
+        margin-bottom: 1.25rem;
+        color: var(--color-text-secondary);
+        line-height: 1.7;
       }
-      h2 {
-        color: #ffffff;
-        margin-top: 30px;
+      .legal-content strong {
+        color: var(--color-text-primary);
       }
-      p {
-        margin-bottom: 15px;
+      .legal-header {
+        margin-bottom: 3rem;
       }
-      strong {
-        color: #ffffff;
+      .legal-header h1 {
+        margin-bottom: 0.5rem;
       }
-      .footer {
-        margin-top: 50px;
-        font-size: 0.85em;
-        color: #888;
-        border-top: 1px solid #333;
-        padding-top: 20px;
+      .last-updated {
+        color: var(--color-accent);
+        font-size: 0.9rem;
+        font-weight: 500;
       }
-      a {
-        color: #3b82f6;
-        text-decoration: none;
-      }
-      a:hover {
+      .legal-content a {
+        color: var(--color-link);
         text-decoration: underline;
+      }
+      .legal-content a:hover {
+        color: var(--color-link-hover);
       }
     </style>
   </head>
   <body>
-    <h1>Terms of Service</h1>
-    <p>Last Updated: May 20, 2024</p>
+    <div class="container-center">
+      <header class="hero legal-header">
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last Updated: May 20, 2024</p>
+      </header>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>
-      By accessing the private instance hosted at
-      <strong>n8n.fedrian.dev</strong>, you agree to be bound by these Terms of
-      Service. This instance is intended for strictly personal and private use
-      by the domain owner.
-    </p>
+      <section class="section-wrapper">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <div class="control-dot close"></div>
+              <div class="control-dot minimize"></div>
+              <div class="control-dot maximize"></div>
+            </div>
+            <div class="terminal-title">terms_of_service.md</div>
+          </div>
+          <div class="terminal-body legal-content">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+              By accessing the private instance hosted at
+              <strong>n8n.fedrian.dev</strong>, you agree to be bound by these
+              Terms of Service. This instance is intended for strictly
+              <strong>personal and private use</strong> by the domain owner.
+            </p>
 
-    <h2>2. Description of Service</h2>
-    <p>
-      This instance runs n8n, an extendable workflow automation tool. It is used
-      to connect various third-party services (such as Google, Telegram, etc.)
-      to automate tasks and manage personal data.
-    </p>
+            <h2>2. Description of Service</h2>
+            <p>
+              This instance runs n8n, an extendable workflow automation tool. It
+              is used to connect various third-party services (such as Google,
+              Telegram, etc.) to automate tasks and manage personal data.
+            </p>
 
-    <h2>2. User Conduct</h2>
-    <p>
-      You agree not to use this service for any unlawful activities, including
-      but not limited to spamming, unauthorized data collection, or any actions
-      that violate the terms of service of any third-party providers connected
-      to this instance.
-    </p>
+            <h2>3. User Conduct</h2>
+            <p>
+              You agree not to use this service for any unlawful activities,
+              including but not limited to spamming, unauthorized data
+              collection, or any actions that violate the terms of service of
+              any third-party providers connected to this instance.
+            </p>
 
-    <h2>3. Disclaimer of Warranties</h2>
-    <p>
-      The service is provided on an "AS IS" and "AS AVAILABLE" basis. The owner
-      makes no warranties, expressed or implied, regarding the reliability,
-      availability, or suitability of the service for any particular purpose.
-    </p>
+            <h2>4. Disclaimer of Warranties</h2>
+            <p>
+              The service is provided on an <strong>"AS IS"</strong> and
+              <strong>"AS AVAILABLE"</strong> basis. The owner makes no
+              warranties, expressed or implied, regarding the reliability,
+              availability, or suitability of the service for any particular
+              purpose.
+            </p>
 
-    <h2>4. Limitation of Liability</h2>
-    <p>
-      In no event shall the owner be liable for any direct, indirect,
-      incidental, or consequential damages arising out of the use or inability
-      to use the service, including but not limited to data loss or service
-      interruptions.
-    </p>
+            <h2>5. Limitation of Liability</h2>
+            <p>
+              In no event shall the owner be liable for any direct, indirect,
+              incidental, or consequential damages arising out of the use or
+              inability to use the service, including but not limited to data
+              loss or service interruptions.
+            </p>
 
-    <h2>5. Governing Law</h2>
-    <p>
-      These terms shall be governed by and construed in accordance with the laws
-      of Bolivia, without regard to its conflict of law provisions.
-    </p>
+            <h2>6. Governing Law</h2>
+            <p>
+              These terms shall be governed by and construed in accordance with
+              the laws of
+              <strong>Bolivia</strong>, without regard to its conflict of law
+              provisions.
+            </p>
 
-    <h2>6. Modifications</h2>
-    <p>
-      We reserve the right to modify these terms at any time. Significant
-      changes will be indicated by updating the "Last Updated" date at the top
-      of this page.
-    </p>
+            <h2>7. Modifications</h2>
+            <p>
+              We reserve the right to modify these terms at any time.
+              Significant changes will be indicated by updating the "Last
+              Updated" date at the top of this page.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <div class="footer">
-      &copy; 2024 Fedrian - Private Automations |
-      <a href="/index.html">Home</a> |
-      <a href="/privacy-policy.html">Privacy Policy</a>
+      <footer class="site-footer">
+        <p>
+          &copy; 2024 Felix Adrian Mamani Foronda |
+          <a href="/index.html" class="syntax-link">Back to Home</a>
+        </p>
+        <div class="footer-nav">
+          <a href="/privacy-policy.html" class="syntax-link"
+            >[ Privacy Policy ]</a
+          >
+        </div>
+      </footer>
     </div>
   </body>
 </html>
