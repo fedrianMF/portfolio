@@ -1,0 +1,186 @@
+/* Components */
+
+/* Avatar */
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  background-color: rgba(31, 41, 55, 0.4);
+  color: #86efac;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.badge:hover {
+  background-color: rgba(31, 41, 55, 0.6);
+  border-color: rgba(75, 85, 99, 0.8);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #1f2937;
+  color: var(--color-text-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Terminal Component */
+.terminal-window {
+  width: 100%;
+  background-color: var(--color-terminal-bg);
+  backdrop-filter: blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  border: 1px solid var(--color-terminal-border);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.terminal-window:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: var(--color-terminal-header);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.terminal-controls {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+  opacity: 0.8;
+}
+
+.control-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #3f3f46;
+  transition: all 0.2s ease;
+}
+
+.terminal-window:hover .control-dot.close {
+  background-color: #ef4444;
+}
+.terminal-window:hover .control-dot.minimize {
+  background-color: #eab308;
+}
+.terminal-window:hover .control-dot.maximize {
+  background-color: #22c55e;
+}
+
+.terminal-title {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-primary);
+  opacity: 0.5;
+  letter-spacing: 0.02em;
+}
+
+.terminal-body {
+  padding: 24px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  overflow-x: auto;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.terminal-output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Terminal Syntax */
+.syntax-user {
+  color: var(--color-user);
+  font-weight: 500;
+}
+.syntax-dir {
+  color: var(--color-dir);
+  font-weight: 600;
+}
+.syntax-file {
+  color: var(--color-file);
+}
+.syntax-link {
+  color: var(--color-text-primary);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+}
+.syntax-link:hover {
+  border-bottom-style: solid;
+  border-color: var(--color-text-primary);
+}
+
+/* Cursor Animation */
+.cursor-blink {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.2em;
+  background-color: var(--color-text-primary);
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,17 @@
+services:
+  portfolio:
+    build: .
+    image: nginx_portfolio:latest
+    container_name: nginx_portfolio_app
+    restart: always
+    networks:
+      - web_network
+    # El puerto 8080 es temporal para que puedas probarlo 
+    # mientras el Nginx local sigue activo. 
+    # Luego, Nginx Proxy lo encontrará internamente.
+    ports:
+      - "8080:80"
+
+networks:
+  web_network:
+    external: true

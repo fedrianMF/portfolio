@@ -1,26 +1,22 @@
-# Operating System Files
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-Desktop.ini
 
-# Editor directories
-.vscode/
+# Docker
+docker-compose.override.yml
+
+# Node (if added later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDEs
 .idea/
+.vscode/
 *.swp
 *.swo
-
-# Logs
-*.log
-
-# Temporary & Backup files
-*.tmp
-*.backup
-*.bak
-*~
-
-# Environment variables & Secrets
-.env
-*.pem
-*.key
-id_rsa*
-*.ppk

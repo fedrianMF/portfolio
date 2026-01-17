@@ -1,0 +1,35 @@
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .container-center {
+    padding: 0 var(--spacing-md);
+  }
+
+  .terminal-body {
+    font-size: 0.85rem;
+    padding: var(--spacing-md);
+  }
+}
