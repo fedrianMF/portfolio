@@ -177,6 +177,16 @@
 .syntax-string {
   color: var(--color-string);
 }
+.syntax-live {
+  color: var(--color-accent);
+  border-bottom: 1px dotted rgba(252, 163, 17, 0.5);
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.syntax-live:hover {
+  border-bottom-style: solid;
+  color: var(--color-highlight-yellow);
+}
 
 /* Cursor Animation */
 .cursor-blink {
