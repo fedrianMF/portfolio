@@ -6,7 +6,7 @@ A simple, clean portfolio website with a terminal aesthetic.
 
 ## 🌐 Live Demo
 
-Visit: [fedrian.dev](https://fedrian.dev)
+Visit: [portfolio.fedrian.dev](https://portfolio.fedrian.dev)
 
 ## 📫 Contact
 
