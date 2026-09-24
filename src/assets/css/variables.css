@@ -16,6 +16,10 @@
   --color-file: #a1a1a1;
   --color-link: #4493f8;
   --color-link-hover: #58a6ff;
+  --color-comment: #7d8590;
+  --color-section: var(--color-accent);
+  --color-key: var(--color-user);
+  --color-string: var(--color-dir);
 
   /* Typography */
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;

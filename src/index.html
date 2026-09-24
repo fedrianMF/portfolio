@@ -25,6 +25,9 @@
       property="og:description"
       content="Portfolio of Felix Adrian Mamani Foronda - PHP/Laravel Developer & Fullstack Engineer."
     />
+    <meta property="og:image" content="https://fedrian.dev/assets/img/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -34,10 +37,26 @@
       property="twitter:description"
       content="Portfolio of Felix Adrian Mamani Foronda - PHP/Laravel Developer & Fullstack Engineer."
     />
+    <meta property="twitter:image" content="https://fedrian.dev/assets/img/og-image.png" />
 
     <!-- Theme -->
     <meta name="theme-color" content="#0a0a0a" />
-    <link rel="stylesheet" href="assets/css/styles.css?v=3.1" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css?v=3.2" />
 
     <!-- Dynamic Themes loaded via main.js -->
   </head>
@@ -165,6 +184,7 @@
 
     <!-- Terminal Section -->
     <section id="experience" class="section-wrapper container-wide">
+      <h2 class="visually-hidden">Experience &amp; Projects</h2>
       <div class="terminal-window">
         <div class="terminal-header">
           <div class="terminal-controls">
@@ -177,27 +197,27 @@
         <div class="terminal-body">
           <pre class="terminal-output">
 <span class="syntax-user">fedrian@devbox</span>:~$ cat ~/fedrian.conf
-# ══════════════════════════════════════════════════════
+<span class="syntax-comment"># ══════════════════════════════════════════════════════
 # Personal Configuration File - Felix Adrian Mamani Foronda
-# ══════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════</span>
 
-[identity]
-name = "Felix Adrian Mamani Foronda"
-role = "PHP/Laravel Developer | Fullstack Engineer"
-location = "La Paz, Bolivia 🇧🇴"
-emails = ["me@fedrian.dev", "fedrian.mamani@gmail.com"]
+<span class="syntax-section">[identity]</span>
+<span class="syntax-key">name</span> = <span class="syntax-string">"Felix Adrian Mamani Foronda"</span>
+<span class="syntax-key">role</span> = <span class="syntax-string">"PHP/Laravel Developer | Fullstack Engineer"</span>
+<span class="syntax-key">location</span> = <span class="syntax-string">"La Paz, Bolivia 🇧🇴"</span>
+<span class="syntax-key">emails</span> = [<span class="syntax-string">"me@fedrian.dev"</span>, <span class="syntax-string">"fedrian.mamani@gmail.com"</span>]
 
-[experience]
-years = "5+ years"
-focus = "Web Development & Backend Engineering"
-specialties = ["Laravel/PHP", "REST APIs", "Real-time Apps"]
+<span class="syntax-section">[experience]</span>
+<span class="syntax-key">years</span> = <span class="syntax-string">"5+ years"</span>
+<span class="syntax-key">focus</span> = <span class="syntax-string">"Web Development & Backend Engineering"</span>
+<span class="syntax-key">specialties</span> = [<span class="syntax-string">"Laravel/PHP"</span>, <span class="syntax-string">"REST APIs"</span>, <span class="syntax-string">"Real-time Apps"</span>]
 
-[projects.symposium]
-name = "Symposium"
-description = "SaaS app built with Laravel, following Laracasts' course"
-stack = ["Laravel", "PHP", "SQLite", "Docker", "Dokploy + Traefik"]
-repo = "<a href="https://github.com/fedrianMF/symposium-dev" target="_blank" class="syntax-link">github.com/fedrianMF/symposium-dev</a>"
-live = "<a href="https://symposium.fedrian.dev" target="_blank" class="syntax-link">symposium.fedrian.dev</a>"
+<span class="syntax-section">[projects.symposium]</span>
+<span class="syntax-key">name</span> = <span class="syntax-string">"Symposium"</span>
+<span class="syntax-key">description</span> = <span class="syntax-string">"SaaS app built with Laravel, following Laracasts' course"</span>
+<span class="syntax-key">stack</span> = [<span class="syntax-string">"Laravel"</span>, <span class="syntax-string">"PHP"</span>, <span class="syntax-string">"SQLite"</span>, <span class="syntax-string">"Docker"</span>, <span class="syntax-string">"Dokploy + Traefik"</span>]
+<span class="syntax-key">repo</span> = "<a href="https://github.com/fedrianMF/symposium-dev" target="_blank" class="syntax-link">github.com/fedrianMF/symposium-dev</a>"
+<span class="syntax-key">live</span> = "<a href="https://symposium.fedrian.dev" target="_blank" class="syntax-link">symposium.fedrian.dev</a>"
 
 <span class="syntax-user">fedrian@devbox</span>:~$ tree ~/projects
 <span class="syntax-dir">/home/fedrian/projects</span>

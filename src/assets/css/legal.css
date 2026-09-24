@@ -1,0 +1,41 @@
+/* Legal Pages (Privacy Policy, Terms of Service) */
+.legal-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+}
+
+.legal-content p {
+  margin-bottom: 1.25rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.legal-content strong {
+  color: var(--color-text-primary);
+}
+
+.legal-header {
+  margin-bottom: 3rem;
+}
+
+.legal-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.last-updated {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Ensure links in terminal look like links */
+.legal-content a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+.legal-content a:hover {
+  color: var(--color-link-hover);
+}

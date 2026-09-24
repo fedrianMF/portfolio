@@ -3,49 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - n8n Fedrian</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <style>
-      .legal-content h2 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        color: var(--color-text-primary);
-        font-size: 1.25rem;
-      }
-      .legal-content p {
-        margin-bottom: 1.25rem;
-        color: var(--color-text-secondary);
-        line-height: 1.7;
-      }
-      .legal-content strong {
-        color: var(--color-text-primary);
-      }
-      .legal-header {
-        margin-bottom: 3rem;
-      }
-      .legal-header h1 {
-        margin-bottom: 0.5rem;
-      }
-      .last-updated {
-        color: var(--color-accent);
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
-      /* Ensure links in terminal look like links */
-      .legal-content a {
-        color: var(--color-link);
-        text-decoration: underline;
-      }
-      .legal-content a:hover {
-        color: var(--color-link-hover);
-      }
-    </style>
+    <link rel="canonical" href="https://fedrian.dev/privacy-policy.html" />
+    <title>Privacy Policy | Fedrian</title>
+    <meta
+      name="description"
+      content="Privacy Policy for the self-hosted tools and services operated by Felix Adrian Mamani Foronda under the fedrian.dev domain, including Google API data usage."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css?v=3.2" />
+    <link rel="stylesheet" href="assets/css/legal.css" />
   </head>
   <body>
     <div class="container-center">
       <header class="hero legal-header">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: May 20, 2024</p>
+        <p class="last-updated">Last Updated: September 23, 2026</p>
       </header>
 
       <section class="section-wrapper">
@@ -60,33 +50,48 @@
           </div>
           <div class="terminal-body legal-content">
             <p>
-              This Privacy Policy describes how your information is handled in
-              the private instance of n8n hosted at
-              <strong>n8n.fedrian.dev</strong>.
+              This Privacy Policy applies to the self-hosted tools and
+              services operated by <strong>Felix Adrian Mamani Foronda</strong>
+              under the <strong>fedrian.dev</strong> domain and its
+              subdomains ("the Services"). This currently includes the n8n
+              automation instance at <strong>n8n.fedrian.dev</strong>, and
+              may be extended to additional self-hosted services added under
+              this domain in the future. Any new service covered by this
+              policy will be listed in the "Services Covered" section below.
             </p>
 
             <h2>1. Overview</h2>
             <p>
-              This application is a
-              <strong>private, personal automation instance</strong>. It is used
-              exclusively by the domain owner for workflow automation and
-              personal productivity.
+              The Services are
+              <strong>private, personal automation and integration tools</strong>.
+              They are used exclusively by the domain owner for workflow
+              automation and personal productivity, and are not offered
+              commercially or to the public.
             </p>
 
-            <h2>2. Use of Google User Data</h2>
+            <h2>2. Services Covered</h2>
             <p>
-              If you authorize this application to access your Google account
-              via OAuth, the application will only access the specific data
-              (scopes) you have explicitly permitted. This data is used solely
-              to execute the automations you configure within the private
-              instance (e.g., synchronizing emails, updating spreadsheets, or
-              managing calendar events).
+              <strong>n8n</strong> (n8n.fedrian.dev) — a self-hosted workflow
+              automation instance. Additional self-hosted services may be
+              added under the fedrian.dev domain over time; when they are,
+              this same policy applies to them unless a service publishes
+              its own specific policy.
             </p>
 
-            <h2>3. Limited Use Disclosure</h2>
+            <h2>3. Use of Google User Data</h2>
             <p>
-              The use and transfer of information received from Google APIs to
-              any other app will adhere to
+              If you authorize any of the Services to access your Google
+              account via OAuth, the Service will only access the specific
+              data (scopes) you have explicitly permitted. This data is used
+              solely to execute the automations you configure within that
+              private instance (e.g., synchronizing emails, updating
+              spreadsheets, or managing calendar events).
+            </p>
+
+            <h2>4. Limited Use Disclosure</h2>
+            <p>
+              The use and transfer of information received from Google APIs
+              to any other app will adhere to
               <strong
                 ><a
                   href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes"
@@ -97,29 +102,42 @@
               >, including the Limited Use requirements.
             </p>
 
-            <h2>4. Data Storage and Security</h2>
+            <h2>5. Data Storage and Security</h2>
             <p>
-              All data processed through this instance is kept within the
-              private server environment and is not shared with any third
-              parties. We implement industry-standard security measures,
-              including <strong>SSL/TLS encryption (HTTPS)</strong>, to protect
-              the transmission of data. Data is stored locally in the instance's
-              database and is not accessible to external entities.
+              All data processed through the Services is kept within the
+              domain owner's private server environment and is not shared
+              with any third parties. We implement industry-standard
+              security measures, including
+              <strong>SSL/TLS encryption (HTTPS)</strong>, to protect the
+              transmission of data. Data is stored locally in each Service's
+              own database and is not accessible to external entities.
             </p>
 
-            <h2>5. Data Sharing</h2>
+            <h2>6. Data Sharing</h2>
             <p>
               We do not share, sell, or distribute any user data or account
-              information with third-party developers, advertisers, or any other
-              entities. Everything happens within this private, self-hosted
-              infrastructure.
+              information with third-party developers, advertisers, or any
+              other entities. Everything happens within this private,
+              self-hosted infrastructure.
             </p>
 
-            <h2>6. Changes to This Policy</h2>
+            <h2>7. Changes to This Policy</h2>
             <p>
-              This policy may be updated periodically to reflect changes in our
-              practices or for legal reasons. Any significant changes will be
-              reflected in the "Last Updated" date at the top.
+              This policy may be updated periodically to reflect changes in
+              our practices, the addition of new Services, or for legal
+              reasons. Any significant changes will be reflected in the
+              "Last Updated" date at the top.
+            </p>
+
+            <h2>8. Contact</h2>
+            <p>
+              For any questions about this Privacy Policy or how your data
+              is handled, contact
+              <strong
+                ><a href="mailto:me@fedrian.dev" class="syntax-link"
+                  >me@fedrian.dev</a
+                ></strong
+              >.
             </p>
           </div>
         </div>
@@ -127,7 +145,7 @@
 
       <footer class="site-footer">
         <p>
-          &copy; 2024 Felix Adrian Mamani Foronda |
+          &copy; 2026 Felix Adrian Mamani Foronda |
           <a href="/index.html" class="syntax-link">Back to Home</a>
         </p>
         <div class="footer-nav">

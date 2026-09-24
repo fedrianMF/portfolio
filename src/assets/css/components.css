@@ -164,6 +164,19 @@
   border-bottom-style: solid;
   border-color: var(--color-text-primary);
 }
+.syntax-comment {
+  color: var(--color-comment);
+}
+.syntax-section {
+  color: var(--color-section);
+  font-weight: 700;
+}
+.syntax-key {
+  color: var(--color-key);
+}
+.syntax-string {
+  color: var(--color-string);
+}
 
 /* Cursor Animation */
 .cursor-blink {
