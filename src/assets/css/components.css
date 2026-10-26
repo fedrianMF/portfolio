@@ -135,8 +135,6 @@
   line-height: 1.6;
   color: var(--color-text-primary);
   overflow-x: auto;
-  max-height: 500px;
-  overflow-y: auto;
 }
 
 .terminal-output {
